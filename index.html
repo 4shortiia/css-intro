@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- This is a header -->
+    <header>
+      <a href="#">TechBlog</a>
+      <nav>
+        <ul>
+          <li><a href="#home">მთავარი</a></li>
+          <li><a href="#blog">ბლოგი</a></li>
+          <li><a href="#categories">კატეგორია</a></li>
+          <li><a href="#about-us">ჩვენ შესახებ</a></li>
+          <li><a href="#contact">კონტაქტი</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+      <section id="home" class="hero">
+        <img src="assets/e11fe0289d1ad6e93656e54c43b99f9275d82560.jpg" alt="TechBlog" />
+
+        <h1>აღმოაჩინე ტექნოლოგიების სამყარო</h1>
+        <p>თანამედროვე ტექნოლოგიები და ინოვაციები ერთ სივრცეში</p>
+      </section>
+
+      <!-- Blog Section -->
+      <section id="blog" class="blog-section">
+        <h2 class="blog-title">ბოლო სიახლეები</h2>
+
+        <!-- Card 1 -->
+        <div class="blog-grid">
+          <article class="card">
+            <figure class="card-figure">
+              <div class="card-img bg-purple"></div>
+              <figcaption class="card-date-author">
+                <span>8 იანვარი</span>
+                <span>ავტორი: ნინო გელაშვილი</span>
+              </figcaption>
+            </figure>
+
+            <div class="card-body">
+              <h3 class="card-title">ხელოვნური ინტელექტის მომავალი 2026 წელს</h3>
+              <p class="card-desc">გაეცანით უახლეს ტენდენციებს AI-ის სფეროში და რა ცვლილებებს მოგვიტანს ახალი წელი. ექსპერტები აანალიზებენ ტექნოლოგიის განვითარების ძირითად მიმართულებებს.</p>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <figure class="card-figure">
+              <div class="card-img bg-pink"></div>
+              <figcaption class="card-date-author">
+                <span>7 იანვარი</span>
+                <span>ავტორი: გიორგი ბერიძე</span>
+              </figcaption>
+            </figure>
+
+            <div class="card-body">
+              <h3 class="card-title">Web Development-ის ახალი სტანდარტები</h3>
+              <p class="card-desc">როგორ იცვლება ვებ დეველოპმენტი 2026 წელს. განვიხილოთ ახალი ფრეიმვორკები, ინსტრუმენტები და საუკეთესო პრაქტიკები თანამედროვე ვებ აპლიკაციების შესაქმნელად.</p>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card">
+            <figure class="card-figure">
+              <div class="card-img bg-blue"></div>
+              <figcaption class="card-date-author">
+                <span>6 იანვარი</span>
+                <span>ავტორი: ანა ქავთარაძე</span>
+              </figcaption>
+            </figure>
+
+            <div class="card-body">
+              <h3 class="card-title">კიბერუსაფრთხოება დღევანდელ სამყაროში</h3>
+              <p class="card-desc">თანამედროვე საფრთხეები და დაცვის მეთოდები. როგორ დავიცვათ ჩვენი მონაცემები და რა პრევენციული ზომები უნდა მივიღოთ ონლაინ სივრცეში. რა პრევენციული ზომები უნდა.</p>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card">
+            <figure class="card-figure">
+              <div class="card-img bg-green"></div>
+              <figcaption class="card-date-author">
+                <span>5 იანვარი</span>
+                <span>ავტორი: დავით მესხი</span>
+              </figcaption>
+            </figure>
+
+            <div class="card-body">
+              <h3 class="card-title">Cloud Computing-ის ახალი ეპოქა</h3>
+              <p class="card-desc">ღრუბლოვანი ტექნოლოგიების განვითარება და მათი გამოყენების პერსპექტივები. რა შესაძლებლობებს გვთავაზობს თანამედროვე ღრუბლოვანი პლატფორმები.</p>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="card">
+            <figure class="card-figure">
+              <div class="card-img bg-bisque"></div>
+              <figcaption class="card-date-author">
+                <span>4 იანვარი</span>
+                <span>ავტორი: მარიამ ლომიძე</span>
+              </figcaption>
+            </figure>
+
+            <div class="card-body">
+              <h3 class="card-title">მობილური აპლიკაციების დიზაინი</h3>
+              <p class="card-desc">UX/UI დიზაინის თანამედროვე ტენდენციები მობილური აპლიკაციებისთვის. როგორ შევქმნათ მომხმარებლისთვის მოსახერხებელი და მიმზიდველი ინტერფეისი.</p>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="card">
+            <figure class="card-figure">
+              <div class="card-img bg-peach"></div>
+              <figcaption class="card-date-author">
+                <span>3 იანვარი</span>
+                <span>ავტორი: ლევან ჯიქია</span>
+              </figcaption>
+            </figure>
+
+            <div class="card-body">
+              <h3 class="card-title">Blockchain და კრიპტოვალუტები</h3>
+              <p class="card-desc">Blockchain ტექნოლოგიის გამოყენების სფეროები და კრიპტოვალუტების მომავალი. ანალიზი და პროგნოზები ექსპერტებისგან ციფრული ფინანსების შესახებ.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- This is a footer -->
+    <footer>
+      <div class="footer-content">
+        <section id="about-us" class="footer-about">
+          <h3 class="footer-title">TechBlog</h3>
+          <p class="footer-desc">თანამედროვე ტექნოლოგიების შესახებ საინფორმაციო პლატფორმა. ჩვენ გთავაზობთ უახლეს სიახლეებს IT სფეროდან.</p>
+        </section>
+
+        <section id="categories" class="category">
+          <h3 class="footer-title">კატეგორები</h3>
+          <div class="footer-details">
+            <ul>
+              <li><a href="#">პროგრამირება</a></li>
+              <li><a href="#">დიზაინი</a></li>
+              <li><a href="#">უსაფრთხოება</a></li>
+              <li><a href="#">ხელოვნური ინტელექტი</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- Address Section -->
+      <address id="contact" class="footer-contact">
+        <h3 class="footer-title">კონტაქტი</h3>
+        <p class="footer-desc">
+          Email:
+          <a href="mailto:info@techblog.ge">info@techblog.ge</a>
+        </p>
+        <p class="footer-desc">
+          Tel:
+          <a href="tel:+995555123456">+995 555 123 456</a>
+        </p>
+        <p class="footer-desc">Address: Tbilisi, Georgia</p>
+      </address>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechBlog. ყველა უფლება დაცულია.</p>
+      </div>
+    </footer>
+  </body>
+</html>
